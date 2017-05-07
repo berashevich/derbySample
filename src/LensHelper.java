@@ -17,7 +17,7 @@ public class LensHelper {
             "    FIXVALUE           DOUBLE, \n" +
             "    ZOOMMODE           VARCHAR(30), \n" +
             "    MINVALUE           DOUBLE, \n" +
-            "    MAXVALUE           DOUBLE, \n" +
+            "    MAXVALUE           INTEGER, \n" +
             "    APERTUREMODE       VARCHAR(30), \n" +
             "    APERTUREVALUE      DOUBLE, \n" +
             "    MATRIXFORMAT       DOUBLE NOT NULL, \n" +
@@ -85,7 +85,7 @@ public class LensHelper {
             statement.setDouble(2, lens.getFixvalue());
             statement.setString(3, lens.getZoommode().toString());
             statement.setDouble(4, lens.getMinvalue());
-            statement.setDouble(5, lens.getMaxvalue());
+            statement.setInt(5, lens.getMaxvalue());
             statement.setString(6, lens.getAperturemode().toString());
             statement.setDouble(7, lens.getAperturevalue());
             statement.setDouble(8, lens.getMatrixformat());

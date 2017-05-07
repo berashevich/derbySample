@@ -8,7 +8,7 @@ public class Lens {
     public enum ZoomMode {Min, Max}
     private ZoomMode zoommode;
     private double minvalue;
-    private double maxvalue;
+    private int maxvalue;
     public enum ApertureMode {Automatic, Manual}
     private ApertureMode aperturemode;
     private double aperturevalue;
@@ -48,11 +48,11 @@ public class Lens {
         this.minvalue = minvalue;
     }
 
-    public double getMaxvalue() {
+    public int getMaxvalue() {
         return maxvalue;
     }
 
-    public void setMaxvalue(double maxvalue) {
+    public void setMaxvalue(int maxvalue) {
         this.maxvalue = maxvalue;
     }
 
@@ -95,7 +95,7 @@ public class Lens {
         this.aperturemode = aperturemode;
     }
 
-    public Lens(TypeLens typelens, double fixvalue, ZoomMode zoommode, double minvalue, double maxvalue, ApertureMode aperturemode, double aperturevalue, double matrixformat, MountingType mountingtype) {
+    public Lens(TypeLens typelens, double fixvalue, ZoomMode zoommode, double minvalue, int maxvalue, ApertureMode aperturemode, double aperturevalue, double matrixformat, MountingType mountingtype) {
         this.typelens = typelens;
         this.fixvalue = fixvalue;
         this.zoommode = zoommode;
