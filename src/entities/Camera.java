@@ -1,6 +1,5 @@
-/**
- * Created by Анастасия on 05.05.2017.
- */
+package entities;
+
 public class Camera {
     public enum Typebody {KUPOL, CILINDR, POVOROT, SKRYT, OTHER}
     private double minLight;
@@ -170,17 +169,7 @@ public class Camera {
     }
 
     public Camera(double minLight, int frequency, Typebody typebody, SignalRatio signalratio, double resolution, double aspectratio, double sizematrix, String voltage, ShootingMode shootingmode, AlarmInOut alarminout, CompressionImage compressionimage, int lowtemp, int hightemp, DayNightMode daynightmode, IRled irled, SupportAudio supportaudio) {
-        this.minLight = minLight;
-        this.frequency = frequency;
-        this.typebody = typebody;
-        this.signalratio = signalratio;
-        this.resolution = resolution;
-        this.aspectratio = aspectratio;
-        this.sizematrix = sizematrix;
-        this.voltage = voltage;
-        this.shootingmode = shootingmode;
-        this.alarminout = alarminout;
-        this.compressionimage = compressionimage;
+        this(minLight, frequency, typebody, signalratio, resolution, aspectratio, sizematrix, voltage, shootingmode, alarminout, compressionimage);
         this.lowtemp = lowtemp;
         this.hightemp = hightemp;
         this.daynightmode = daynightmode;

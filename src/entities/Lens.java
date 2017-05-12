@@ -1,6 +1,5 @@
-/**
- * Created by Анастасия on 06.05.2017.
- */
+package entities;
+
 public class Lens {
     public enum TypeLens {Fix, Zoom}
     private TypeLens typelens;
@@ -96,14 +95,11 @@ public class Lens {
     }
 
     public Lens(TypeLens typelens, double fixvalue, ZoomMode zoommode, double minvalue, int maxvalue, ApertureMode aperturemode, double aperturevalue, double matrixformat, MountingType mountingtype) {
-        this.typelens = typelens;
+        this(typelens, matrixformat, mountingtype, aperturemode);
         this.fixvalue = fixvalue;
         this.zoommode = zoommode;
         this.minvalue = minvalue;
         this.maxvalue = maxvalue;
-        this.aperturemode = aperturemode;
         this.aperturevalue = aperturevalue;
-        this.matrixformat = matrixformat;
-        this.mountingtype = mountingtype;
     }
 }
