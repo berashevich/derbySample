@@ -17,4 +17,5 @@ public enum ZoomMode {
     public int getId() {
         return mId;
     }
+
 }
