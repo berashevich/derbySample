@@ -19,4 +19,5 @@ public enum CompressionImage {
     public int getId() {
         return mId;
     }
+
 }

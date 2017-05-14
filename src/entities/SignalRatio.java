@@ -32,4 +32,5 @@ public enum SignalRatio {
     public Integer getMaxValue() {
         return mMaxValue;
     }
+
 }

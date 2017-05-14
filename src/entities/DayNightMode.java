@@ -17,4 +17,5 @@ public enum DayNightMode {
     public int getId() {
         return mId;
     }
+
 }

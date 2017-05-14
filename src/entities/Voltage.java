@@ -6,17 +6,19 @@ import com.sun.org.apache.xpath.internal.operations.String;
  * Created by Анастасия on 13.05.2017.
  */
 public enum Voltage {
-    TYPEONE(1, 12, ),
-    TYPETWO(2, 24),
-    TYPETHREE(3, 12),
-    TYPEFOUR(4, 220),
+    TYPEONE(1, 12, "VDC"),
+    TYPETWO(2, 24, "VDC"),
+    TYPETHREE(3, 12, "VAC"),
+    TYPEFOUR(4, 220, "VAC" +
+            "" +
+            ""),
     ;
 
     private final int mId;
     private int mValue;
-    private String mTypeVolt;
+    private java.lang.String mTypeVolt;
 
-    Voltage(int id, int Value, String TypeVolt) {
+    Voltage(int id, int Value, java.lang.String TypeVolt) {
         mId = id;
         mValue = Value;
         mTypeVolt = TypeVolt;
@@ -30,7 +32,7 @@ public enum Voltage {
         return mValue;
     }
 
-    public String getTypeVolt() {
+    public java.lang.String getTypeVolt() {
         return mTypeVolt;
     }
 }

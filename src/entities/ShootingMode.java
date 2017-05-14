@@ -18,4 +18,5 @@ public enum ShootingMode {
     public int getId() {
         return mId;
     }
+
 }

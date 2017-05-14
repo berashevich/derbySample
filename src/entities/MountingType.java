@@ -18,4 +18,5 @@ public enum MountingType {
     public int getId() {
         return mId;
     }
+
 }

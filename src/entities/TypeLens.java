@@ -17,4 +17,5 @@ public enum  TypeLens {
     public int getId() {
         return mId;
     }
+
 }

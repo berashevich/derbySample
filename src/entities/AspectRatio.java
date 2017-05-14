@@ -29,4 +29,5 @@ public enum AspectRatio {
     public Integer getValueB() {
         return mValueB;
     }
+
 }

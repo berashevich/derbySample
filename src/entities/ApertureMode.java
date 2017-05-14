@@ -17,4 +17,5 @@ public enum ApertureMode {
     public int getId() {
         return mId;
     }
+
 }
